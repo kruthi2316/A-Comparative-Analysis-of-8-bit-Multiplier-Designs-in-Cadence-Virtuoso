@@ -1,0 +1,63 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : array_mult_8bit
+Version: H-2013.03-SP3
+Date   : Tue Mar 26 00:50:57 2024
+****************************************
+
+Operating Conditions: typical   Library: gscl45nm
+Wire Load Model Mode: top
+
+  Startpoint: a[1] (input port clocked by clk)
+  Endpoint: prod[15] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.10       0.10 f
+  a[1] (in)                                               0.00       0.10 f
+  U117/Y (AND2X1)                                         0.05       0.15 f
+  U155/Y (AND2X1)                                         0.06       0.21 f
+  add_6_root_add_0_root_add_31/U1_2/YC (FAX1)             0.08       0.30 f
+  add_6_root_add_0_root_add_31/U1_3/YC (FAX1)             0.08       0.38 f
+  add_6_root_add_0_root_add_31/U1_4/YC (FAX1)             0.08       0.47 f
+  add_6_root_add_0_root_add_31/U1_5/YC (FAX1)             0.08       0.55 f
+  add_6_root_add_0_root_add_31/U1_6/YS (FAX1)             0.10       0.65 r
+  add_1_root_add_0_root_add_31/U1_6/YS (FAX1)             0.11       0.76 f
+  add_0_root_add_0_root_add_31/B[6] (array_mult_8bit_DW01_add_0)
+                                                          0.00       0.76 f
+  add_0_root_add_0_root_add_31/U1_6/YC (FAX1)             0.09       0.85 f
+  add_0_root_add_0_root_add_31/U1_7/YC (FAX1)             0.08       0.93 f
+  add_0_root_add_0_root_add_31/U1_8/YC (FAX1)             0.08       1.02 f
+  add_0_root_add_0_root_add_31/U1_9/YC (FAX1)             0.08       1.10 f
+  add_0_root_add_0_root_add_31/U1_10/YC (FAX1)            0.08       1.19 f
+  add_0_root_add_0_root_add_31/U1_11/YC (FAX1)            0.08       1.27 f
+  add_0_root_add_0_root_add_31/U1_12/YC (FAX1)            0.08       1.36 f
+  add_0_root_add_0_root_add_31/U1_13/YC (FAX1)            0.08       1.44 f
+  add_0_root_add_0_root_add_31/U1_14/YC (FAX1)            0.08       1.52 f
+  add_0_root_add_0_root_add_31/U2/Y (XOR2X1)              0.04       1.56 r
+  add_0_root_add_0_root_add_31/SUM[15] (array_mult_8bit_DW01_add_0)
+                                                          0.00       1.56 r
+  prod[15] (out)                                          0.00       1.56 r
+  data arrival time                                                  1.56
+
+  clock clk (rise edge)                                   2.00       2.00
+  clock network delay (ideal)                             0.00       2.00
+  output external delay                                  -0.10       1.90
+  data required time                                                 1.90
+  --------------------------------------------------------------------------
+  data required time                                                 1.90
+  data arrival time                                                 -1.56
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.34
+
+
+1

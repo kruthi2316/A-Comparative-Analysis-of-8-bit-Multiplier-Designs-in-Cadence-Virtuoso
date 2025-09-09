@@ -1,0 +1,79 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : wallace_mult_8bit
+Version: H-2013.03-SP3
+Date   : Tue Mar 26 00:50:58 2024
+****************************************
+
+Operating Conditions: typical   Library: gscl45nm
+Wire Load Model Mode: top
+
+  Startpoint: a[4] (input port clocked by clk)
+  Endpoint: prod[15] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.10       0.10 r
+  a[4] (in)                                               0.00       0.10 r
+  U76/Y (AND2X1)                                          0.06       0.16 r
+  csa1_1/b[5] (csa_row_0)                                 0.00       0.16 r
+  csa1_1/csa_bit[5].fa/b (full_adder_91)                  0.00       0.16 r
+  csa1_1/csa_bit[5].fa/U5/Y (XNOR2X1)                     0.07       0.24 r
+  csa1_1/csa_bit[5].fa/U2/Y (XOR2X1)                      0.07       0.31 r
+  csa1_1/csa_bit[5].fa/sum (full_adder_91)                0.00       0.31 r
+  csa1_1/sum[5] (csa_row_0)                               0.00       0.31 r
+  csa2_1/a[5] (csa_row_4)                                 0.00       0.31 r
+  csa2_1/csa_bit[5].fa/a (full_adder_59)                  0.00       0.31 r
+  csa2_1/csa_bit[5].fa/U5/Y (XNOR2X1)                     0.06       0.37 r
+  csa2_1/csa_bit[5].fa/U2/Y (XOR2X1)                      0.07       0.44 r
+  csa2_1/csa_bit[5].fa/sum (full_adder_59)                0.00       0.44 r
+  csa2_1/sum[5] (csa_row_4)                               0.00       0.44 r
+  csa3_1/a[5] (csa_row_2)                                 0.00       0.44 r
+  csa3_1/csa_bit[5].fa/a (full_adder_27)                  0.00       0.44 r
+  csa3_1/csa_bit[5].fa/U5/Y (XNOR2X1)                     0.06       0.50 r
+  csa3_1/csa_bit[5].fa/U2/Y (XOR2X1)                      0.07       0.57 r
+  csa3_1/csa_bit[5].fa/sum (full_adder_27)                0.00       0.57 r
+  csa3_1/sum[5] (csa_row_2)                               0.00       0.57 r
+  csa4_1/a[5] (csa_row_1)                                 0.00       0.57 r
+  csa4_1/csa_bit[5].fa/a (full_adder_11)                  0.00       0.57 r
+  csa4_1/csa_bit[5].fa/U5/Y (XNOR2X1)                     0.06       0.63 r
+  csa4_1/csa_bit[5].fa/U2/Y (XOR2X1)                      0.06       0.69 f
+  csa4_1/csa_bit[5].fa/sum (full_adder_11)                0.00       0.69 f
+  csa4_1/sum[5] (csa_row_1)                               0.00       0.69 f
+  add_50/A[5] (wallace_mult_8bit_DW01_add_0)              0.00       0.69 f
+  add_50/U1_5/YC (FAX1)                                   0.09       0.78 f
+  add_50/U1_6/YC (FAX1)                                   0.08       0.87 f
+  add_50/U1_7/YC (FAX1)                                   0.08       0.95 f
+  add_50/U1_8/YC (FAX1)                                   0.08       1.04 f
+  add_50/U1_9/YC (FAX1)                                   0.08       1.12 f
+  add_50/U1_10/YC (FAX1)                                  0.08       1.21 f
+  add_50/U1_11/YC (FAX1)                                  0.08       1.29 f
+  add_50/U1_12/YC (FAX1)                                  0.08       1.37 f
+  add_50/U1_13/YC (FAX1)                                  0.08       1.46 f
+  add_50/U1_14/YC (FAX1)                                  0.08       1.54 f
+  add_50/U1_15/YS (FAX1)                                  0.07       1.62 f
+  add_50/SUM[15] (wallace_mult_8bit_DW01_add_0)           0.00       1.62 f
+  prod[15] (out)                                          0.00       1.62 f
+  data arrival time                                                  1.62
+
+  clock clk (rise edge)                                   2.00       2.00
+  clock network delay (ideal)                             0.00       2.00
+  output external delay                                  -0.10       1.90
+  data required time                                                 1.90
+  --------------------------------------------------------------------------
+  data required time                                                 1.90
+  data arrival time                                                 -1.62
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.28
+
+
+1

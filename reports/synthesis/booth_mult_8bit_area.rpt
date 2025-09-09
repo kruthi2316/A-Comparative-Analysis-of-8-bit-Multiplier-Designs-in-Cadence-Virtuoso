@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : booth_mult_8bit
+Version: H-2013.03-SP3
+Date   : Tue Mar 26 00:51:00 2024
+****************************************
+
+Library(s) Used:
+
+    gscl45nm (File: /ECEnet/home/student/knarayanaswamy/8bit_multiplier/lib/FreePDK45/osu_soc/lib/files/gscl45nm.db)
+
+Number of ports:                           32
+Number of nets:                           422
+Number of cells:                          369
+Number of combinational cells:            368
+Number of sequential cells:                 0
+Number of macros/black boxes:               0
+Number of buf/inv:                         62
+Number of references:                      14
+
+Combinational area:               1343.136588
+Buf/Inv area:                       97.614398
+Noncombinational area:               0.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                  1343.136588
+Total area:                 undefined
+1

@@ -1,0 +1,53 @@
+Loading db file '/ECEnet/home/student/knarayanaswamy/8bit_multiplier/lib/FreePDK45/osu_soc/lib/files/gscl45nm.db'
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : wallace_mult_8bit
+Version: H-2013.03-SP3
+Date   : Tue Mar 26 00:50:58 2024
+****************************************
+
+
+Library(s) Used:
+
+    gscl45nm (File: /ECEnet/home/student/knarayanaswamy/8bit_multiplier/lib/FreePDK45/osu_soc/lib/files/gscl45nm.db)
+
+
+Operating Conditions: typical   Library: gscl45nm
+Wire Load Model Mode: top
+
+
+Global Operating Voltage = 1.1  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+  Cell Internal Power  = 209.0723 uW   (60%)
+  Net Switching Power  = 139.5719 uW   (40%)
+                         ---------
+Total Dynamic Power    = 348.6442 uW  (100%)
+
+Cell Leakage Power     =  11.1458 uW
+
+Information: report_power power group summary does not include estimated clock tree power. (PWR-789)
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register           0.0000            0.0000            0.0000            0.0000  (   0.00%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational      0.2091            0.1396        1.1146e+04            0.3598  ( 100.00%)
+--------------------------------------------------------------------------------------------------
+Total              0.2091 mW         0.1396 mW     1.1146e+04 nW         0.3598 mW
+1

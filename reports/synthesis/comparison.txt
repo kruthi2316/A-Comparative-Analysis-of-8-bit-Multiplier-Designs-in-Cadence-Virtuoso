@@ -1,0 +1,261 @@
+=============================
+Synthesis Results Comparison
+=============================
+
+Design: array_mult_8bit
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : qor
+Design : array_mult_8bit
+Version: H-2013.03-SP3
+Date   : Tue Mar 26 00:51:00 2024
+****************************************
+
+
+  Timing Path Group 'clk'
+  -----------------------------------
+  Levels of Logic:              18.00
+  Critical Path Length:          1.46
+  Critical Path Slack:           0.34
+  Critical Path Clk Period:      2.00
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+
+  Cell Count
+  -----------------------------------
+  Hierarchical Cell Count:          1
+  Hierarchical Port Count:         50
+  Leaf Cell Count:                148
+  Buf/Inv Cell Count:               0
+  Buf Cell Count:                   0
+  Inv Cell Count:                   0
+  CT Buf/Inv Cell Count:            0
+  Combinational Cell Count:       148
+  Sequential Cell Count:            0
+  Macro Count:                      0
+  -----------------------------------
+
+
+  Area
+  -----------------------------------
+  Combinational Area:      696.441207
+  Noncombinational Area:     0.000000
+  Buf/Inv Area:              0.000000
+  Total Buffer Area:             0.00
+  Total Inverter Area:           0.00
+  Macro/Black Box Area:      0.000000
+  Net Area:                  0.000000
+  -----------------------------------
+  Cell Area:               696.441207
+  Design Area:             696.441207
+
+
+  Design Rules
+  -----------------------------------
+  Total Number of Nets:           214
+  Nets With Violations:             0
+  Max Trans Violations:             0
+  Max Cap Violations:               0
+  -----------------------------------
+
+
+  Hostname: 09vlab099.coe.neu.edu
+
+  Compile CPU Statistics
+  -----------------------------------------
+  Resource Sharing:                    0.23
+  Logic Optimization:                  0.03
+  Mapping Optimization:                0.03
+  -----------------------------------------
+  Overall Compile Time:                0.39
+  Overall Compile Wall Clock Time:     0.94
+
+  --------------------------------------------------------------------
+
+  Design  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+
+  Design (Hold)  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+  --------------------------------------------------------------------
+
+
+1
+
+Design: wallace_mult_8bit
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : qor
+Design : wallace_mult_8bit
+Version: H-2013.03-SP3
+Date   : Tue Aug 26 00:51:00 2025
+****************************************
+
+
+  Timing Path Group 'clk'
+  -----------------------------------
+  Levels of Logic:              20.00
+  Critical Path Length:          1.52
+  Critical Path Slack:           0.28
+  Critical Path Clk Period:      2.00
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+
+  Cell Count
+  -----------------------------------
+  Hierarchical Cell Count:        103
+  Hierarchical Port Count:       1010
+  Leaf Cell Count:                656
+  Buf/Inv Cell Count:             192
+  Buf Cell Count:                   0
+  Inv Cell Count:                 192
+  CT Buf/Inv Cell Count:            0
+  Combinational Cell Count:       656
+  Sequential Cell Count:            0
+  Macro Count:                      0
+  -----------------------------------
+
+
+  Area
+  -----------------------------------
+  Combinational Area:     1949.002852
+  Noncombinational Area:     0.000000
+  Buf/Inv Area:            270.316795
+  Total Buffer Area:             0.00
+  Total Inverter Area:         270.32
+  Macro/Black Box Area:      0.000000
+  Net Area:                  0.000000
+  -----------------------------------
+  Cell Area:              1949.002852
+  Design Area:            1949.002852
+
+
+  Design Rules
+  -----------------------------------
+  Total Number of Nets:           688
+  Nets With Violations:             0
+  Max Trans Violations:             0
+  Max Cap Violations:               0
+  -----------------------------------
+
+
+  Hostname: 09vlab099.coe.neu.edu
+
+  Compile CPU Statistics
+  -----------------------------------------
+  Resource Sharing:                    0.08
+  Logic Optimization:                  0.03
+  Mapping Optimization:                0.21
+  -----------------------------------------
+  Overall Compile Time:                0.48
+  Overall Compile Wall Clock Time:     0.82
+
+  --------------------------------------------------------------------
+
+  Design  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+
+  Design (Hold)  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+  --------------------------------------------------------------------
+
+
+1
+
+Design: booth_mult_8bit
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : qor
+Design : booth_mult_8bit
+Version: H-2013.03-SP3
+Date   : Tue Aug 26 00:51:00 2025
+****************************************
+
+
+  Timing Path Group 'clk'
+  -----------------------------------
+  Levels of Logic:              21.00
+  Critical Path Length:          1.69
+  Critical Path Slack:           0.11
+  Critical Path Clk Period:      2.00
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+
+  Cell Count
+  -----------------------------------
+  Hierarchical Cell Count:          1
+  Hierarchical Port Count:         50
+  Leaf Cell Count:                381
+  Buf/Inv Cell Count:              62
+  Buf Cell Count:                  11
+  Inv Cell Count:                  51
+  CT Buf/Inv Cell Count:            0
+  Combinational Cell Count:       381
+  Sequential Cell Count:            0
+  Macro Count:                      0
+  -----------------------------------
+
+
+  Area
+  -----------------------------------
+  Combinational Area:     1343.136588
+  Noncombinational Area:     0.000000
+  Buf/Inv Area:             97.614398
+  Total Buffer Area:            25.81
+  Total Inverter Area:          71.80
+  Macro/Black Box Area:      0.000000
+  Net Area:                  0.000000
+  -----------------------------------
+  Cell Area:              1343.136588
+  Design Area:            1343.136588
+
+
+  Design Rules
+  -----------------------------------
+  Total Number of Nets:           429
+  Nets With Violations:            11
+  Max Trans Violations:             0
+  Max Cap Violations:              11
+  -----------------------------------
+
+
+  Hostname: 09vlab099.coe.neu.edu
+
+  Compile CPU Statistics
+  -----------------------------------------
+  Resource Sharing:                    0.41
+  Logic Optimization:                  0.05
+  Mapping Optimization:                0.35
+  -----------------------------------------
+  Overall Compile Time:                0.97
+  Overall Compile Wall Clock Time:     1.52
+
+  --------------------------------------------------------------------
+
+  Design  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+
+  Design (Hold)  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+  --------------------------------------------------------------------
+
+
+1
