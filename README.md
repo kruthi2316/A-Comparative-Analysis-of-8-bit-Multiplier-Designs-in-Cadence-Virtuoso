@@ -86,7 +86,7 @@ endmodule
 ### 4. Custom Schematic Design (Cadence Virtuoso)
 
 
-![Waveform](images/multiplier.png)
+![Waveform](Images/multiplier.png)
 
 **Technology:** GPDK045 (45nm)
 - Transistor-level optimization
