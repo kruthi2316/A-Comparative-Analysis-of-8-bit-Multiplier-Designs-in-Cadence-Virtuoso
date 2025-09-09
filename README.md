@@ -1,6 +1,6 @@
 # 8-bit Hardware Multiplier Architectures: A Comparative Study
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 [![Verilog](https://img.shields.io/badge/Verilog-HDL-green.svg)](https://en.wikipedia.org/wiki/Verilog)
 [![Technology](https://img.shields.io/badge/Technology-45nm-blue.svg)](https://en.wikipedia.org/wiki/45_nanometer)
 
@@ -8,7 +8,6 @@
 
 This project presents a comprehensive comparative analysis of three fundamental 8-bit multiplier architectures through complete design flow from RTL specification to custom transistor-level implementation using 45nm technology.
 
-![Multiplier Comparison Banner](https://via.placeholder.com/1200x400/4A90E2/FFFFFF?text=8-bit+Multiplier+Architectures+Comparison)
 
 ## 🎯 Key Achievements
 
@@ -18,8 +17,6 @@ This project presents a comprehensive comparative analysis of three fundamental 
 - Complete design flow from RTL to transistor-level implementation
 
 ## 📊 Performance Comparison
-
-![Performance Chart](https://via.placeholder.com/800x500/28A745/FFFFFF?text=Performance+Metrics+Comparison+Chart)
 
 | Architecture | Area (µm²) | Delay (ns) | Power (µW) | Technology |
 |:------------|:----------:|:----------:|:----------:|:----------:|
@@ -32,7 +29,6 @@ This project presents a comprehensive comparative analysis of three fundamental 
 
 ### 1. Array Multiplier
 Traditional shift-and-add architecture with regular structure
-![Array Architecture](https://via.placeholder.com/600x400/007BFF/FFFFFF?text=Array+Multiplier+Architecture)
 
 **Key Features:**
 - 64 AND gates for partial products
@@ -42,7 +38,7 @@ Traditional shift-and-add architecture with regular structure
 
 ### 2. Wallace Tree Multiplier
 Logarithmic reduction using Carry-Save Adders
-![Wallace Tree Architecture](https://via.placeholder.com/600x400/28A745/FFFFFF?text=Wallace+Tree+Architecture)
+
 
 **Key Features:**
 - CSA tree with log(n) depth
@@ -52,7 +48,7 @@ Logarithmic reduction using Carry-Save Adders
 
 ### 3. Modified Booth Multiplier
 Radix-4 encoding to reduce partial products
-![Booth Architecture](https://via.placeholder.com/600x400/FFC107/FFFFFF?text=Modified+Booth+Architecture)
+
 
 **Key Features:**
 - Reduces partial products from 8 to 4
@@ -82,7 +78,6 @@ endmodule
 
 ### 3. Logic Synthesis (Synopsys Design Compiler)
 
-
 **Technology:** FreePDK45 (45nm)
 - Supply voltage: 1.1V
 - Clock period: 2.0ns constraint
@@ -90,6 +85,8 @@ endmodule
 
 ### 4. Custom Schematic Design (Cadence Virtuoso)
 
+
+![Waveform](images/multiplier.png)
 
 **Technology:** GPDK045 (45nm)
 - Transistor-level optimization
@@ -114,64 +111,10 @@ Custom implementation achieved **12× power reduction** compared to synthesis.
 
 Critical path analysis shows Array's regular structure benefits from better optimization.
 
-## 🚀 Quick Start
-
-### Prerequisites
-- Cadence NCVerilog 15.20+
-- Synopsys Design Compiler H-2013.03+
-- Cadence Virtuoso 6.1.8+
-- FreePDK45 & GPDK045 libraries
-
-### Installation & Running
-
-```bash
-# Clone repository
-git clone https://github.com/yourusername/8bit-multiplier-architectures.git
-cd 8bit-multiplier-architectures
-
-# Setup environment
-source scripts/setup_environment.sh
-
-# Run functional verification
-cd verification/scripts
-./run_ncverilog.sh
-
-# Run synthesis
-cd synthesis/scripts
-dc_shell -f synth_all.tcl
-
-# View results
-cd results/simulation
-cat test_results.txt
-```
-
-## 📁 Repository Structure
-
-```
-8bit-multiplier-architectures/
-├── 📂 rtl/                 # Verilog RTL designs
-│   └── src/
-│       ├── array_mult_8bit.v
-│       ├── wallace_mult_8bit.v
-│       └── booth_mult_8bit.v
-├── 📂 verification/        # Testbenches and verification
-│   ├── tb/
-│   └── scripts/
-├── 📂 synthesis/           # Synthesis scripts and reports
-│   ├── scripts/
-│   └── reports/
-├── 📂 custom_design/       # Cadence Virtuoso files
-│   └── schematics/
-├── 📂 docs/               # Documentation
-│   └── report/
-└── 📂 results/            # Simulation results
-```
 
 ## 🔍 Key Findings
 
 ### Why Array Outperformed at 8-bit Width
-
-![Crossover Analysis](https://via.placeholder.com/700x400/795548/FFFFFF?text=Architecture+Crossover+Points)
 
 1. **Small bit width effect** - Overhead exceeds benefits
 2. **Wire delay dominance** - 45nm interconnect impact
@@ -189,8 +132,6 @@ cat test_results.txt
 
 ## 📝 Test Results Sample
 
-![Test Results](https://via.placeholder.com/800x300/198754/FFFFFF?text=Functional+Verification+100%25+Pass)
-
 ```
 Test#  A    B    Expected  Array  Wallace  Booth  Status
 1      00   00   0000      0000   0000     0000   PASS
@@ -203,8 +144,6 @@ Test#  A    B    Expected  Array  Wallace  Booth  Status
 
 ## 🛠️ Tools Used
 
-![Tools Banner](https://via.placeholder.com/1000x200/343A40/FFFFFF?text=Cadence+|+Synopsys+|+FreePDK45+|+GPDK045)
-
 - **Simulation:** Cadence NCVerilog 15.20
 - **Synthesis:** Synopsys Design Compiler H-2013.03-SP3
 - **Custom Design:** Cadence Virtuoso 6.1.8
@@ -212,10 +151,9 @@ Test#  A    B    Expected  Array  Wallace  Booth  Status
 
 ## 📚 Documentation
 
-- [Full Project Report (PDF)](docs/report/multiplier_report.pdf)
-- [Design Specifications](docs/specifications/design_specs.md)
-- [Synthesis Reports](synthesis/reports/)
-- [Test Results](results/simulation/test_results.txt)
+- [Full Project Report (PDF)](8bit_Multiplier_Project_Report.pdf)
+- [Synthesis Reports](reports/synthesis)
+- [Test Results](results/test_results.txt)
 
 ## 🎓 Academic Context
 
@@ -225,10 +163,32 @@ This project was completed as part of Digital VLSI Design coursework, demonstrat
 - Custom vs. synthesis trade-offs
 - Technology node considerations
 
+Here’s the output of the simulation in Cadence Virtuoso: 
+
+Window 1 (0 → 20 ns)
+	•	B = all bits HIGH → B = 0xFF (255)
+	•	A = 0xFF (255)
+	•	Product P = A * B = 255 * 255 = 65025 = 0xFE01
+-> P<15:0> = 0xFE01 (MSB byte = 0xFE, LSB byte = 0x01)
+
+Window 2 (20 → 40 ns)
+	•	B: only LSB (bit0) went LOW; bits 1..7 HIGH → B = 0xFE (254)
+	•	Product P = 255 * 254 = 64770 = 0xFD02
+-> P<15:0> = 0xFD02
+
+Window 3 (40 → 60 ns)
+	•	B: bit1 went LOW while bit0 returned HIGH → B = 0xFD (253)
+	•	Product P = 255 * 253 = 64515 = 0xFC03
+-> P<15:0> = 0xFC03
+
+So the three stable expected results (at ~10 ns, ~30 ns, ~50 ns) are:
+	•	~10 ns  → P = 0xFE01
+	•	~30 ns  → P = 0xFD02
+	•	~50 ns  → P = 0xFC03
+
+![Waveform](images/waveform.png)
+
 ## 📊 Energy-Delay Product Comparison
-
-![EDP Comparison](https://via.placeholder.com/700x400/E74C3C/FFFFFF?text=542x+EDP+Improvement)
-
 | Implementation | Power (µW) | Delay (ps) | EDP (fJ) |
 |:--------------|:----------:|:----------:|:--------:|
 | Synthesis | 366 | 1,460 | 780 |
@@ -246,14 +206,11 @@ This project was completed as part of Digital VLSI Design coursework, demonstrat
 
 ## 👥 Contributors
 
-- **Student:** K. Narayanaswamy
-- **Institution:** [University Name]
+- **Student:** Kruthi Narayana Swamy
+- **Institution:** Northeastern university
 - **Course:** Digital VLSI Design
-- **Semester:** Fall 2025
+- **Semester:** Spring 2024
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 🙏 Acknowledgments
 
@@ -265,16 +222,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 📧 Contact
 
 For questions or collaborations:
-- Email: knarayanaswamy@university.edu
-- LinkedIn: [Your LinkedIn Profile](https://linkedin.com/in/yourprofile)
-- GitHub: [@yourusername](https://github.com/yourusername)
+- Email: narayanaswamy.k@northeastern.edu
+- LinkedIn: [kruthi Narayana Swamy](https://linkedin.com/in/kruthi-narayana-swamy/)
+- GitHub: [kruthi2316](https://github.com/kruthi2316)
 
 ---
-
-<p align="center">
-  <img src="https://via.placeholder.com/600x100/495057/FFFFFF?text=Thank+You+for+Visiting!" alt="Footer">
-</p>
-
-<p align="center">
-  ⭐ Star this repository if you find it helpful!
-</p>
