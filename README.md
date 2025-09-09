@@ -186,7 +186,7 @@ So the three stable expected results (at ~10 ns, ~30 ns, ~50 ns) are:
 	•	~30 ns  → P = 0xFD02
 	•	~50 ns  → P = 0xFC03
 
-![Waveform](images/waveform.png)
+![Waveform](Images/waveform.png)
 
 ## 📊 Energy-Delay Product Comparison
 | Implementation | Power (µW) | Delay (ps) | EDP (fJ) |
